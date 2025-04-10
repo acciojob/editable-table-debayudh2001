@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSaveChanges}>
       <table>
         <thead>
           <tr>
@@ -59,13 +59,13 @@ const App = () => {
           </tr>
           <tr>
             <td>6</td>
-            <td><input type="text" name="name" defaultValue="Laxshmi" onChange={(e) => handleChange(e, 6)} /></td>
+            <td><input type="text" name="name" defaultValue="Lakshmi" onChange={(e) => handleChange(e, 6)} /></td>
             <td><input type="number" name="age" defaultValue="40" onChange={(e) => handleChange(e, 6)}  /></td>
           </tr>
         </tbody>
       </table>
       <br />
-      <button onClick={handleSaveChanges}>Save Changes</button>
+      <button>Save Changes</button>
       </form>
     </div>
   )
