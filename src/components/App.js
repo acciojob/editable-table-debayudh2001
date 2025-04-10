@@ -7,7 +7,7 @@ const App = () => {
   
   function handleSaveChanges(e){
     e.preventDefault()
-    console.log("Edited Rows:", [...new Set(editedRows.current)].sort((x,y) => x-y))
+    console.log("Edited rows:", [...new Set(editedRows.current)].sort((x,y) => x-y))
     editedRows.current = []
   }
 
